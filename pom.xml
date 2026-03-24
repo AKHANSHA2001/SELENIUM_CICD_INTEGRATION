@@ -101,7 +101,7 @@
                 <version>${surefire.version}</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/testing.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <!-- systemPropertyVariables block intentionally removed.
                          Passing -Dbrowser and -Dheadless as Maven properties caused
