@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.jiverjinx_docs</groupId>
+  <artifactId>JiverJinxDocsAutomation</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>JiverJinxDocsAutomation</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+    <!-- ── Global Properties ────────────────────────────────────────────────── -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+
+        <selenium.version>4.41.0</selenium.version>
+        <webdrivermanager.version>5.9.2</webdrivermanager.version>
+        <testng.version>7.11.0</testng.version>
+        <extentreports.version>5.1.1</extentreports.version>
+        <poi.version>5.2.5</poi.version>
+        <slf4j.version>2.0.13</slf4j.version>
+        <surefire.version>3.2.5</surefire.version>
+    </properties>
+
+    <!-- ── Dependencies ─────────────────────────────────────────────────────── -->
+    <dependencies>
+
+        <!-- Selenium WebDriver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <!-- WebDriverManager — auto-downloads chromedriver/geckodriver/edgedriver -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+
+        <!-- TestNG — no <scope>test</scope> because BaseTest lives in
+             src/main/java and needs TestNG annotations at compile scope -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+        </dependency>
+		<!-- iText HTML to PDF -->
+		<dependency>
+		    <groupId>com.itextpdf</groupId>
+		    <artifactId>html2pdf</artifactId>
+		    <version>5.0.1</version>
+		</dependency>
+        <!-- ExtentReports — HTML reporting -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentreports.version}</version>
+        </dependency>
+
+        <!-- Apache POI — Excel data-driven testing -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+
+        <!-- SLF4J simple binding — silences "No SLF4J providers found" warning -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- ── Build ─────────────────────────────────────────────────────────────── -->
+    <build>
+        <plugins>
+
+            <!-- Compiler — enforce Java 17 bytecode explicitly -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+            <!-- Surefire — runs TestNG suite via Maven -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <!-- systemPropertyVariables block intentionally removed.
+                         Passing -Dbrowser and -Dheadless as Maven properties caused
+                         TestNG's XML parser to throw "Reference to undefined variable
+                         browser" when the suite was launched directly from Eclipse,
+                         because ${browser} is a Maven placeholder that only resolves
+                         during 'mvn test' — not during Eclipse's TestNG runner.
+                         Browser and headless mode are controlled via config.properties
+                         which BaseTest loads at runtime on every @BeforeMethod. -->
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

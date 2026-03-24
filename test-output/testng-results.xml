@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-24T13:16:40 IST" name="Docs Suite" finished-at="2026-03-24T13:17:26 IST" duration-ms="46570">
+    <groups>
+    </groups>
+    <test started-at="2026-03-24T13:16:40 IST" name="Link Checks" finished-at="2026-03-24T13:17:26 IST" duration-ms="46570">
+      <class name="com.jiverjinxDocs.tests.RedirectTest">
+        <test-method is-config="true" signature="initReport()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:16:39 IST" name="initReport" finished-at="2026-03-24T13:16:40 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:16:40 IST" name="setUp" finished-at="2026-03-24T13:16:48 IST" duration-ms="7923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.jiverjinxDocs.tests.RedirectTest.verifyHomePageGuideButtons()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageGuideButtons()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:16:48 IST" name="verifyHomePageGuideButtons" finished-at="2026-03-24T13:16:49 IST" duration-ms="1590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageGuideButtons -->
+        <test-method is-config="true" signature="appendTableToReport(org.testng.ITestResult)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:16:49 IST" name="appendTableToReport" finished-at="2026-03-24T13:16:49 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageGuideButtons status=SUCCESS method=RedirectTest.verifyHomePageGuideButtons()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appendTableToReport -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:16:49 IST" name="tearDown" finished-at="2026-03-24T13:16:49 IST" duration-ms="102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageGuideButtons status=SUCCESS method=RedirectTest.verifyHomePageGuideButtons()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:16:49 IST" name="setUp" finished-at="2026-03-24T13:16:55 IST" duration-ms="5715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.jiverjinxDocs.tests.RedirectTest.verifyHomePageLinks()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageLinks()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:16:55 IST" name="verifyHomePageLinks" finished-at="2026-03-24T13:16:57 IST" duration-ms="2265" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Mismatch — Link: "Registration" | H1: "Overview" | URL: https://docs.jiverjinx.com/web-portal/features/registration/overview/ expected [true] but found [false],
+Mismatch — Link: "Incidents" | H1: "Overview" | URL: https://docs.jiverjinx.com/web-portal/features/incidents/overview/ expected [true] but found [false],
+Mismatch — Link: "Getting Started" | H1: "Student App Overview" | URL: https://docs.jiverjinx.com/getting-started/student-app-overview/ expected [true] but found [false],
+Mismatch — Link: "Registration" | H1: "Overview" | URL: https://docs.jiverjinx.com/student-app/registration/overview/ expected [true] but found [false],
+Mismatch — Link: "Incidents" | H1: "Overview" | URL: https://docs.jiverjinx.com/student-app/incidents/overview/ expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Mismatch — Link: "Registration" | H1: "Overview" | URL: https://docs.jiverjinx.com/web-portal/features/registration/overview/ expected [true] but found [false],
+Mismatch — Link: "Incidents" | H1: "Overview" | URL: https://docs.jiverjinx.com/web-portal/features/incidents/overview/ expected [true] but found [false],
+Mismatch — Link: "Getting Started" | H1: "Student App Overview" | URL: https://docs.jiverjinx.com/getting-started/student-app-overview/ expected [true] but found [false],
+Mismatch — Link: "Registration" | H1: "Overview" | URL: https://docs.jiverjinx.com/student-app/registration/overview/ expected [true] but found [false],
+Mismatch — Link: "Incidents" | H1: "Overview" | URL: https://docs.jiverjinx.com/student-app/incidents/overview/ expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.jiverjinxDocs.tests.RedirectTest.verifyHomePageLinks(RedirectTest.java:99)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageLinks -->
+        <test-method is-config="true" signature="appendTableToReport(org.testng.ITestResult)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:16:57 IST" name="appendTableToReport" finished-at="2026-03-24T13:16:57 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageLinks status=FAILURE method=RedirectTest.verifyHomePageLinks()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appendTableToReport -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:16:57 IST" name="tearDown" finished-at="2026-03-24T13:16:57 IST" duration-ms="86" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageLinks status=FAILURE method=RedirectTest.verifyHomePageLinks()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:16:57 IST" name="setUp" finished-at="2026-03-24T13:17:03 IST" duration-ms="5644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.jiverjinxDocs.tests.RedirectTest.verifyStudentAppOverviewSideNav()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyStudentAppOverviewSideNav()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:17:03 IST" name="verifyStudentAppOverviewSideNav" finished-at="2026-03-24T13:17:12 IST" duration-ms="8921" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+[Student App Overview] [ID=29] [School Web Portal › Incidents] Link: "How to View and Add People Involved" | H1: "How to View and Add People Involved in Incident" | URL: https://docs.jiverjinx.com/web-portal/features/incidents/people-involved/ expected [true] but found [false],
+[Student App Overview] [ID=40] [School Web Portal › School] Link: "How to Update a School Logo?" | H1: "How to Update a School Logo" | URL: https://docs.jiverjinx.com/web-portal/features/school/update-logo/ expected [true] but found [false],
+[Student App Overview] [ID=41] [School Web Portal › School] Link: "How to Change School Name and Contact Details?" | H1: "How to Change School Name and Contact Details" | URL: https://docs.jiverjinx.com/web-portal/features/school/change-name-contact/ expected [true] but found [false],
+[Student App Overview] [ID=42] [School Web Portal › School] Link: "How to Set a Brand Color of the School?" | H1: "How to Set a Brand Color of the School" | URL: https://docs.jiverjinx.com/web-portal/features/school/set-brand-color/ expected [true] but found [false],
+[Student App Overview] [ID=43] [School Web Portal › School] Link: "How to Configure Grade and Class Globally?" | H1: "How to Configure Grade and Class Globally" | URL: https://docs.jiverjinx.com/web-portal/features/school/configure-grade-class/ expected [true] but found [false],
+[Student App Overview] [ID=56] [School Web Portal › Chat Groups] Link: "How to Add or Remove Student Representative" | H1: "How to Add or Remove Student Representatives" | URL: https://docs.jiverjinx.com/web-portal/features/chat-groups/manage-representatives/ expected [true] but found [false],
+[Student App Overview] [ID=82] [Student App › Incidents] Link: "What Does Requested Confidentiality Mean" | H1: "What Does Requested Confidentiality Mean?" | URL: https://docs.jiverjinx.com/student-app/incidents/requested-confidentiality/ expected [true] but found [false],
+[Student App Overview] [ID=83] [Student App › Incidents] Link: "How to Attach More Evidences After Reporting" | H1: "How to Attach More Evidences After Reporting an Incident" | URL: https://docs.jiverjinx.com/student-app/incidents/attach-evidence/ expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+[Student App Overview] [ID=29] [School Web Portal › Incidents] Link: "How to View and Add People Involved" | H1: "How to View and Add People Involved in Incident" | URL: https://docs.jiverjinx.com/web-portal/features/incidents/people-involved/ expected [true] but found [false],
+[Student App Overview] [ID=40] [School Web Portal › School] Link: "How to Update a School Logo?" | H1: "How to Update a School Logo" | URL: https://docs.jiverjinx.com/web-portal/features/school/update-logo/ expected [true] but found [false],
+[Student App Overview] [ID=41] [School Web Portal › School] Link: "How to Change School Name and Contact Details?" | H1: "How to Change School Name and Contact Details" | URL: https://docs.jiverjinx.com/web-portal/features/school/change-name-contact/ expected [true] but found [false],
+[Student App Overview] [ID=42] [School Web Portal › School] Link: "How to Set a Brand Color of the School?" | H1: "How to Set a Brand Color of the School" | URL: https://docs.jiverjinx.com/web-portal/features/school/set-brand-color/ expected [true] but found [false],
+[Student App Overview] [ID=43] [School Web Portal › School] Link: "How to Configure Grade and Class Globally?" | H1: "How to Configure Grade and Class Globally" | URL: https://docs.jiverjinx.com/web-portal/features/school/configure-grade-class/ expected [true] but found [false],
+[Student App Overview] [ID=56] [School Web Portal › Chat Groups] Link: "How to Add or Remove Student Representative" | H1: "How to Add or Remove Student Representatives" | URL: https://docs.jiverjinx.com/web-portal/features/chat-groups/manage-representatives/ expected [true] but found [false],
+[Student App Overview] [ID=82] [Student App › Incidents] Link: "What Does Requested Confidentiality Mean" | H1: "What Does Requested Confidentiality Mean?" | URL: https://docs.jiverjinx.com/student-app/incidents/requested-confidentiality/ expected [true] but found [false],
+[Student App Overview] [ID=83] [Student App › Incidents] Link: "How to Attach More Evidences After Reporting" | H1: "How to Attach More Evidences After Reporting an Incident" | URL: https://docs.jiverjinx.com/student-app/incidents/attach-evidence/ expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.jiverjinxDocs.tests.RedirectTest.runExcelDrivenAudit(RedirectTest.java:157)
+at com.jiverjinxDocs.tests.RedirectTest.verifyStudentAppOverviewSideNav(RedirectTest.java:108)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStudentAppOverviewSideNav -->
+        <test-method is-config="true" signature="appendTableToReport(org.testng.ITestResult)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:17:12 IST" name="appendTableToReport" finished-at="2026-03-24T13:17:12 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyStudentAppOverviewSideNav status=FAILURE method=RedirectTest.verifyStudentAppOverviewSideNav()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appendTableToReport -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:17:12 IST" name="tearDown" finished-at="2026-03-24T13:17:12 IST" duration-ms="102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyStudentAppOverviewSideNav status=FAILURE method=RedirectTest.verifyStudentAppOverviewSideNav()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:17:12 IST" name="setUp" finished-at="2026-03-24T13:17:18 IST" duration-ms="5712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.jiverjinxDocs.tests.RedirectTest.verifyWebPortalOverviewSideNav()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyWebPortalOverviewSideNav()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:17:18 IST" name="verifyWebPortalOverviewSideNav" finished-at="2026-03-24T13:17:26 IST" duration-ms="8301" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+[Web Portal Overview] [ID=29] [School Web Portal › Incidents] Link: "How to View and Add People Involved" | H1: "How to View and Add People Involved in Incident" | URL: https://docs.jiverjinx.com/web-portal/features/incidents/people-involved/ expected [true] but found [false],
+[Web Portal Overview] [ID=40] [School Web Portal › School] Link: "How to Update a School Logo?" | H1: "How to Update a School Logo" | URL: https://docs.jiverjinx.com/web-portal/features/school/update-logo/ expected [true] but found [false],
+[Web Portal Overview] [ID=41] [School Web Portal › School] Link: "How to Change School Name and Contact Details?" | H1: "How to Change School Name and Contact Details" | URL: https://docs.jiverjinx.com/web-portal/features/school/change-name-contact/ expected [true] but found [false],
+[Web Portal Overview] [ID=42] [School Web Portal › School] Link: "How to Set a Brand Color of the School?" | H1: "How to Set a Brand Color of the School" | URL: https://docs.jiverjinx.com/web-portal/features/school/set-brand-color/ expected [true] but found [false],
+[Web Portal Overview] [ID=43] [School Web Portal › School] Link: "How to Configure Grade and Class Globally?" | H1: "How to Configure Grade and Class Globally" | URL: https://docs.jiverjinx.com/web-portal/features/school/configure-grade-class/ expected [true] but found [false],
+[Web Portal Overview] [ID=56] [School Web Portal › Chat Groups] Link: "How to Add or Remove Student Representative" | H1: "How to Add or Remove Student Representatives" | URL: https://docs.jiverjinx.com/web-portal/features/chat-groups/manage-representatives/ expected [true] but found [false],
+[Web Portal Overview] [ID=82] [Student App › Incidents] Link: "What Does Requested Confidentiality Mean" | H1: "What Does Requested Confidentiality Mean?" | URL: https://docs.jiverjinx.com/student-app/incidents/requested-confidentiality/ expected [true] but found [false],
+[Web Portal Overview] [ID=83] [Student App › Incidents] Link: "How to Attach More Evidences After Reporting" | H1: "How to Attach More Evidences After Reporting an Incident" | URL: https://docs.jiverjinx.com/student-app/incidents/attach-evidence/ expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+[Web Portal Overview] [ID=29] [School Web Portal › Incidents] Link: "How to View and Add People Involved" | H1: "How to View and Add People Involved in Incident" | URL: https://docs.jiverjinx.com/web-portal/features/incidents/people-involved/ expected [true] but found [false],
+[Web Portal Overview] [ID=40] [School Web Portal › School] Link: "How to Update a School Logo?" | H1: "How to Update a School Logo" | URL: https://docs.jiverjinx.com/web-portal/features/school/update-logo/ expected [true] but found [false],
+[Web Portal Overview] [ID=41] [School Web Portal › School] Link: "How to Change School Name and Contact Details?" | H1: "How to Change School Name and Contact Details" | URL: https://docs.jiverjinx.com/web-portal/features/school/change-name-contact/ expected [true] but found [false],
+[Web Portal Overview] [ID=42] [School Web Portal › School] Link: "How to Set a Brand Color of the School?" | H1: "How to Set a Brand Color of the School" | URL: https://docs.jiverjinx.com/web-portal/features/school/set-brand-color/ expected [true] but found [false],
+[Web Portal Overview] [ID=43] [School Web Portal › School] Link: "How to Configure Grade and Class Globally?" | H1: "How to Configure Grade and Class Globally" | URL: https://docs.jiverjinx.com/web-portal/features/school/configure-grade-class/ expected [true] but found [false],
+[Web Portal Overview] [ID=56] [School Web Portal › Chat Groups] Link: "How to Add or Remove Student Representative" | H1: "How to Add or Remove Student Representatives" | URL: https://docs.jiverjinx.com/web-portal/features/chat-groups/manage-representatives/ expected [true] but found [false],
+[Web Portal Overview] [ID=82] [Student App › Incidents] Link: "What Does Requested Confidentiality Mean" | H1: "What Does Requested Confidentiality Mean?" | URL: https://docs.jiverjinx.com/student-app/incidents/requested-confidentiality/ expected [true] but found [false],
+[Web Portal Overview] [ID=83] [Student App › Incidents] Link: "How to Attach More Evidences After Reporting" | H1: "How to Attach More Evidences After Reporting an Incident" | URL: https://docs.jiverjinx.com/student-app/incidents/attach-evidence/ expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.jiverjinxDocs.tests.RedirectTest.runExcelDrivenAudit(RedirectTest.java:157)
+at com.jiverjinxDocs.tests.RedirectTest.verifyWebPortalOverviewSideNav(RedirectTest.java:119)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWebPortalOverviewSideNav -->
+        <test-method is-config="true" signature="appendTableToReport(org.testng.ITestResult)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:17:26 IST" name="appendTableToReport" finished-at="2026-03-24T13:17:26 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWebPortalOverviewSideNav status=FAILURE method=RedirectTest.verifyWebPortalOverviewSideNav()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appendTableToReport -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:17:26 IST" name="tearDown" finished-at="2026-03-24T13:17:26 IST" duration-ms="92" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWebPortalOverviewSideNav status=FAILURE method=RedirectTest.verifyWebPortalOverviewSideNav()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.jiverjinxDocs.tests.RedirectTest@6ed3ccb2]" started-at="2026-03-24T13:17:26 IST" name="flushReport" finished-at="2026-03-24T13:17:30 IST" duration-ms="3623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.jiverjinxDocs.tests.RedirectTest -->
+    </test> <!-- Link Checks -->
+  </suite> <!-- Docs Suite -->
+</testng-results>
