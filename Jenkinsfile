@@ -33,15 +33,22 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            mail to: 'akhansha000@gmail.com',
-                 subject: "JiverJinx Audit - Build #${BUILD_NUMBER} - ${currentBuild.result}",
-                 body: """
-                 Build Result: ${currentBuild.result}
-                 Build Number: ${BUILD_NUMBER}
-                 Check Report: ${BUILD_URL}JiverJinx_20Audit_20Report
-                 """
-        }
-    }
+	post {
+    	always {
+	        publishHTML([
+	            allowMissing: true,
+	            alwaysLinkToLastBuild: true,
+	            keepAll: true,
+	            reportDir: 'test-output',
+	            reportFiles: 'ExtentReport.html',
+	            reportName: 'JiverJinx Audit Report'
+        ])
+	      emailext(
+	            to: 'akhansha000@gmail.com',
+	            subject: "JiverJinx Audit - Build #${BUILD_NUMBER} - ${currentBuild.result}",
+	            body: "Build Result: ${currentBuild.result}\nReport: ${BUILD_URL}JiverJinx_20Audit_20Report",
+	            mimeType: 'text/plain'
+	        )
+	    }
+	}
 }
