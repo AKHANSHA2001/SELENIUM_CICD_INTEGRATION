@@ -53,7 +53,8 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        driver.get(prop.getProperty("docs.url"));
+       // driver.get(prop.getProperty("docs.url"));
+        driver.get(System.getProperty("docs.url", prop.getProperty("docs.url")));
 
         // Create a test node in the report named after the @Test method
         ExtentTest test = extent.createTest(method.getName());
